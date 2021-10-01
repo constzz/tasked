@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="taskItem"
+            type="com.gmail.konstantin.bezzemelnyi.data.model.Task" />
+
+        <variable
+            name="taskViewModel"
+            type="com.gmail.konstantin.bezzemelnyi.data.viewmodel.TaskViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="72dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="36dp">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox"
+            style="@style/TaskCheckbox"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:checked="@{taskItem.checked}" />
+
+        <EditText
+            android:id="@+id/contentEt"
+            style="@style/TaskContentEditTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:minHeight="48dp"
+            android:text="@{taskItem.content}"
+            tools:ignore="LabelFor"
+            tools:text="@string/lorem_ipsum_task_content" />
+
+    </LinearLayout>
+</layout>

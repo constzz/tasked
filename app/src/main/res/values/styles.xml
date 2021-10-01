@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Checkbox-->
+    <style name="TaskCheckbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">@color/black_darkest</item>
+        <item name="android:colorControlActivated">@color/red</item>
+        <item name="android:colorControlHighlight">#c51162</item>
+    </style>
+
+    <style name="TaskContentEditTextView">
+        <item name="android:background">@null</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+</resources>
