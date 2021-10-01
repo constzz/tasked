@@ -71,7 +71,7 @@
             android:layout_marginHorizontal="24dp"
             android:width="0dp"
             android:emptyState="@{isDatabaseEmpty}"
-            android:text="Have a nice day! You don`t have tasks to do any more"
+            android:text="@string/no_tasks_state_text"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

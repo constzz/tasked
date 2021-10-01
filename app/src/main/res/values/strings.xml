@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">tasked</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Task List Fragment-->
+    <string name="no_tasks_state_text">Have a nice day! You don`t have tasks to do any more</string>
+
+    <!--Task Add Bottomsheet-->
+    <string name="add_task_button">Add</string>
+    <string name="add_task_hint">Describe your task…</string>
+
+    <!--Tools-->
     <string name="lorem_ipsum_task_content">wash the dishes in that way, so next time guests see them they will feel jealous</string>
+
 </resources>
